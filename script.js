@@ -1,6 +1,10 @@
 function showSolution(exampleNumber) {
     const solutionElement = document.getElementById(`solution${exampleNumber}`);
-    solutionElement.style.display = 'block';
+    if (solutionElement.style.display === 'none' || solutionElement.style.display === '') {
+        solutionElement.style.display = 'block';
+    } else {
+        solutionElement.style.display = 'none';
+    }
 }
 
 function checkAnswer(problemNumber, correctAnswer) {
@@ -15,8 +19,3 @@ function checkAnswer(problemNumber, correctAnswer) {
         feedbackElement.style.color = "red";
     }
 }
-
-// Load the default lesson initially
-window.onload = function() {
-    showSolution(1);
-};
