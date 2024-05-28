@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algebra I Lesson: Solving Linear Equations</title>
+    <title>Algebra I: Solving Linear Equations</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Algebra I: Solving Linear Equations</h1>
-            <p>Learn how to solve linear equations step by step!</p>
+            <p>Master solving linear equations with detailed explanations, interactive problems, and quizzes!</p>
         </header>
         <section id="introduction">
             <h2>Introduction</h2>
@@ -31,11 +31,13 @@
             <div class="example">
                 <h3>Example 1</h3>
                 <p>Solve for <code>x</code>: <code>2x + 3 = 7</code></p>
-                <p>Step 1: Subtract 3 from both sides: <code>2x + 3 - 3 = 7 - 3</code></p>
-                <p>Step 2: Simplify: <code>2x = 4</code></p>
-                <p>Step 3: Divide both sides by 2: <code>x = 2</code></p>
+                <button onclick="showSolution(1)">Show Solution</button>
+                <div id="solution1" class="solution" style="display: none;">
+                    <p>Step 1: Subtract 3 from both sides: <code>2x + 3 - 3 = 7 - 3</code></p>
+                    <p>Step 2: Simplify: <code>2x = 4</code></p>
+                    <p>Step 3: Divide both sides by 2: <code>x = 2</code></p>
+                </div>
             </div>
-            <!-- Add more examples as needed -->
         </section>
         <section id="practice">
             <h2>Practice Problems</h2>
@@ -46,12 +48,16 @@
                 <button onclick="checkAnswer(1, 5)">Check Answer</button>
                 <p id="feedback1"></p>
             </div>
-            <!-- Add more practice problems as needed -->
         </section>
         <section id="quiz">
             <h2>Quiz</h2>
             <p>Test your knowledge with this quiz.</p>
-            <!-- Add quiz questions here -->
+            <div class="quiz-question">
+                <p><strong>Question 1:</strong> Solve for <code>x</code>: <code>4x - 8 = 12</code></p>
+                <input type="text" id="quizAnswer1" placeholder="Your answer">
+                <button onclick="checkQuizAnswer(1, 5)">Submit Answer</button>
+                <p id="quizFeedback1"></p>
+            </div>
         </section>
         <section id="summary">
             <h2>Summary</h2>
@@ -61,4 +67,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
