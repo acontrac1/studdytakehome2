@@ -59,7 +59,7 @@ h3 {
     color: #4682b4;
 }
 
-.example, .problem, .quiz-question {
+.example, .problem {
     background-color: #fafafa;
     padding: 10px;
     border-radius: 4px;
@@ -78,7 +78,7 @@ input[type="text"] {
     margin-top: 10px;
 }
 
-#feedback1, #quizFeedback1 {
+#feedback1, #feedback2, #feedback3, #feedback4, #feedback5, #feedback6, #feedback7 {
     margin-top: 10px;
     font-weight: bold;
 }
