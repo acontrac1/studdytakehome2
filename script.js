@@ -16,15 +16,7 @@ function checkAnswer(problemNumber, correctAnswer) {
     }
 }
 
-function checkQuizAnswer(questionNumber, correctAnswer) {
-    const userAnswer = document.getElementById(`quizAnswer${questionNumber}`).value;
-    const feedbackElement = document.getElementById(`quizFeedback${questionNumber}`);
-
-    if (parseFloat(userAnswer) === correctAnswer) {
-        feedbackElement.textContent = "Correct!";
-        feedbackElement.style.color = "green";
-    } else {
-        feedbackElement.textContent = "Incorrect. Try again.";
-        feedbackElement.style.color = "red";
-    }
-}
+// Load the default lesson initially
+window.onload = function() {
+    showSolution(1);
+};
